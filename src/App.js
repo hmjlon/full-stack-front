@@ -7,8 +7,8 @@ import { useEffect } from 'react';
 function App() {
   const [currentTime, setCurrentTime] = useState('');
   
-  useEffect())=>{
-    axios.get('http://localhost:8080/api/time')
+  useEffect(()=>{
+    axios.get('/api/time')
     .then(response=>{
       setCurrentTime(response.data);
     })
